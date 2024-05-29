@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
                         runOnUiThread {
                             if (bitmap != null) {
                                 var newBitmap = when (filtroNum) {
-                                    1 -> openUtils.setUtil(bitmap!!)
+                                    1 -> openUtils.setUtil(bitmap)
                                     2 -> openUtils.variableThreshold(bitmap!!)
                                     else -> bitmap
                                 }
